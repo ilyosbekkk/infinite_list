@@ -55,6 +55,7 @@ class _PostsListState extends State<PostsList> {
 
   }
   void _onScroll() {
+    print("end: ${_isBottom}");
     if (_isBottom) context.read<PostBloc>().add(PostFetched());
   }
 
